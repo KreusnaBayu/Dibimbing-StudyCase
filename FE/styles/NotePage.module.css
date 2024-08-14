@@ -1,0 +1,281 @@
+.container {
+    display: flex;
+    flex-direction: column; /* Stack topContainer above mainContainer */
+    padding: 10px;
+    gap: 20px; /* Space between topContainer and mainContainer */
+    margin: 40px 200px;
+}
+
+.topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative; /* This allows positioning of child elements absolutely */
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-right: auto;
+}
+
+.username {
+    font-size: 20px;
+    font-weight: 550;
+    color: #000000;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navItem {
+    font-size: 20px;
+    font-weight: 550;
+    color: #000000;
+    cursor: pointer;
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.navItem:hover {
+    background-color: #007bff; 
+    color: #ffffff; 
+}
+
+/* Logo styling */
+.logo {
+    margin-left: auto; /* Pushes the logo to the far right */
+}
+
+.logoImage {
+    height: 40px; /* Adjust logo size as needed */
+    width: auto;
+}
+
+.mainContainer {
+    display: flex;
+    gap: 50px;
+}
+
+.leftContainer {
+    flex: 0.5;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 60vh;
+    overflow-y: auto;
+    position: relative;
+}
+
+.leftContainer::-webkit-scrollbar {
+    display: none;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+}
+
+.heading i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.rightContainer {
+    flex: 0.5;
+    background-color: #f9fafb;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: calc(60vh * 0.75);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.listContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.noteCard {
+    background-color: #f9fafb;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.noteCard:hover {
+    transform: scale(1.02);
+}
+
+.noteTitle {
+    font-size: 1.5rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.noteBody {
+    font-size: 0.9rem;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.noteDate {
+    font-size: 0.875rem;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+.rightContainer h3 {
+    color: black;
+    font-weight: bold;
+}
+
+.inputField {
+    border: none;
+    background-color: #ffffff;
+    color: #111827;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.textareaField {
+    height: 200px;
+    resize: none;
+    border: none;
+    background-color: #ffffff;
+    color: #111827;
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 450;
+    margin-bottom: 10px;
+}
+
+.button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.button:hover {
+    background-color: #1d4ed8;
+}
+
+.buttonhps {
+    background-color: #eb4325;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.buttonhps:hover {
+    background-color: #d8391d;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #e0e0e0;
+    
+}
+
+.bottomRightContainer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 30px;
+    animation: slideIn 2s ease-out;
+  }
+
+.card {
+    display: flex;
+    gap: 15px;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cardImage {
+    width: 100px; 
+    height: 100px; 
+    object-fit: cover; 
+    border-radius: 10px; 
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.cardTitle {
+    font-size: 1.2rem;
+    color: #000000;
+}
+
+.cardDescription {
+    font-size: 1rem;
+    color: #666666;
+}
+.cardQuote {
+    font-size: 16px; 
+    color: #333; 
+    font-style: italic; 
+    margin-top: 10px; 
+    border-left: 4px solid #007bff; 
+    padding-left: 10px; 
+}
+
+
+  
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  
+
+  
+@keyframes textAnimation {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}

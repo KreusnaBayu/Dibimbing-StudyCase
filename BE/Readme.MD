@@ -1,6 +1,6 @@
 ## Required
 - [Node.js] (Ensure that Node.js is installed on your system)
-- npm (Node package manager, usually comes with Node.js)
+- [npm] (Node package manager, usually comes with Node.js)
 
 ## Tech
 - [node.js] - evented I/O for the backend
